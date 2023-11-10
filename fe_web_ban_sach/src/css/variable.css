@@ -1,0 +1,24 @@
+:root {
+    --font: "Quicksand";
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi: 600;
+    --font-bold: 700;
+    --app-black: #0f151f;
+    --app-red: #ff556a;
+    --app-blue: #739dd8;
+    --app-white: #ffffff;
+    --app-grey: #787a7f;
+    --app-light-grey: #c0c3ca;
+    --app-light-grey-2: #e8ebef;
+    --app-light-grey-3: #ced4da;
+    --app-light-blue: rgba(239, 244, 251, 0.91);
+    --bootstrap-light: #f8f9fa;
+    --bootstrap-color-divide: #dee2e6;
+    --12px: 0.75rem;
+    --14px: 0.875rem;
+    --16px: 1rem;
+    --18px: 1.124rem;
+    --20px: 1.25rem;
+}

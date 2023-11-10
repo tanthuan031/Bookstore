@@ -1,0 +1,66 @@
+version: "3"
+services:
+    be_web_ban_sach:
+        container_name: be_web_ban_sach
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        tty: true
+        working_dir: /var/www/be_web_ban_sach
+        volumes:
+            - .:/var/www/be_web_ban_sach
+            - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+        environment:
+            - "DB_CONNECTION=pgsql"
+            - "DB_PORT=5432"
+            - "DB_HOST=db_web_ban_sach"
+            - "DB_DATABASE=web_ban_sach"
+            - "DB_USERNAME=web_ban_sach"
+            - "DB_PASSWORD=qiweb_ban_sach@123"
+
+        networks:
+            - app-network
+        depends_on:
+            - db_web_ban_sach
+
+    db_web_ban_sach:
+        container_name: db_web_ban_sach
+        image: "postgres:14.4-alpine"
+        environment:
+            - POSTGRES_USER=web_ban_sach
+            - POSTGRES_PASSWORD=qiweb_ban_sach@123
+            - POSTGRES_DB=web_ban_sach
+        ports:
+            - "5433:5432"
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        networks:
+            - app-network
+    redis:
+        image: redis:alpine
+        volumes:
+            - ./docker/volumes/redis:/data
+        ports:
+            - "6379:6379"
+        networks:
+            - app-network
+    nginx:
+        container_name: nginx_be_web_ban_sach
+        image: nginx:latest
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "8888:8888"
+        volumes:
+            - .:/var/www/be_web_ban_sach
+            - ./nginx.conf:/etc/nginx/conf.d/be_web_ban_sach.conf:ro
+        networks:
+            - app-network
+#Docker Networks
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+    postgres_data:

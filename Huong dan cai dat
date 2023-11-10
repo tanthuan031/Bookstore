@@ -1,0 +1,86 @@
+
+HELLO . XIn chao các bạn . Hôm nay mình sẽ hướng dẫn 
+
+
+Hướng dẫn cài đặt Code website bán sách
+
+Bước 1: Download source code về (DO MÌNH ĐÃ DOWNLOAD SẴN RÔIF NÊN MÌNH XIN BỎ QUA NHÉ <3)
+Bước 2: Giải nén source code 
+Bước 3: Chuẩn bị môi trường để chạy source code
+
+        1. Cài composer theo link sau : https://getcomposer.org/download/ (CÁC BẠN TRUY CẬP THEO LINK ĐÓ LÀ CÓ THỂ CÀI ĐUỌCW NÈ)
+
+        2. Cài php 8.1: Bạn có thể search trên google để cài nó có rất nhiều (NÓ CÓ RẤT NHIỀU CÁCH BẠN CÓ THỂ SEARCH TRÊN GOOGLE NHÉ
+                    Ở ĐÂY MÌNH SỬ DỤNG XAMPP CHO DỄ NHÉ NẾU BẠN ĐÃ CÀI XAMPP RỒI THÌ MẶC ĐỊNH NÓ ĐÃ CÀI CHO MÌNH RỒI Á..)
+
+        3. Cài đặt node 18. Bạn có thể tìm kiếm phiên bản node trên website chính của nó
+                CÀI RẤT CHI LÀ DỄ LUÔN . CÁC BẠN TRUY CẬP TRANG CHỦ NODEJS LÀ CÓ THỂ CÀI ĐƯỢC NÈ <3
+        
+        4. Cài IDE lưu database là postgres hoặc mysql. nếu ban su dụng loại nào thì trong .env sửa lại cho đúng nhé . OOO
+
+DO MÌNH LÀ DÂN KỸ THUẬT NÊN NHỮNG MÔI TRƯỜNG NÀY MÌNH ĐÃ CÀI TỪ TRƯỚC . NÊN MÌNH XIN BỎ QUA BƯỚC NÀY NHÉ . HIHI
+
+BẠN NÀO MÀ KO CÀI ĐƯỢC THÌ LIÊN HỆ MÌNH HỖ TRỢ TẬN RĂNG LUÔN NHA <3 
+
+OKKEEE
+UỐNG 1 TÁCH CAFE LÀ ĐÃ CÀI XONG ......
+
+
+Bước 4: Sau khi chuẩn bị toàn bộ môi trường chúng ta bắt đầu chạy source code (Ở đây tôi dùng IDE VScode để mở terminal  )
+
+CODE CỦA MÌNH ĐƯỢC VIẾT THEO API KẾT NỐI VỚI REACTJS Ở FRONTEND NHÉ
+
+    1. cd /be_web_ban_sach
+    2. copy .env.example và đổi tên thành .env   Xong 
+    3. Mở terminal lên và chạy các câu lệnh sau
+            composer install ( Đợi cho tới khi qua trình hoàn tất) xong
+            php artisan key:generate  xong
+            
+            php artisan migrate:fresh --seed (Chạy lênh này để tao database và dữ liệu mẫu nhé) xong 
+            php artisan storage:link (Để nó có thể chạy truy cập imgae )public
+
+            php artisan serve (Để run source ở phía backend )
+
+Oke như vậy là ta đã setup xong môi trương ở backend rồi đó
+Chuyển sang FRONTEND NÀO
+
+
+    4. chuyển sang code client : cd ../fe_web_ban_sach sau đó chạy các lệnh sau
+            npm install or yarn install Xong
+            do mình đã cài rồi nên bỏ quả nhé
+
+            cuối cùng bạn chạy : npm start hoặc yarn start để chạy code frontend
+
+Do để thời gian video ko quá dài nên mình đã bỏ qua các bước cài mình chỉ hướng dẫn các bạn từng bước , Là chạy okkê . Nếu nó bị lỗi ở bước nào thì liên hệ mình hỗ trợ nhé ..........
+
+ĐÓ là cách cài truyền thống . Nếu bạn nào mà biết về docker thì chỉ chạy 3 câu lệnh là xong và ko cần cài thêm IDE gì hết luôn. Nếu bạn nào muốn thì mình sẽ hỗ trợ trong quá trình cài nhé . HIHIiiiiiiiiiiiiiii
+
+
+OKEEEE LET GOOOOOOO
+
+
+Sau đây mình xinn demo nhé
+
+
+    DEMO
+                username: tanthuan@tanthuan.com
+                password: 12345678910
+
+
+
+
+
+Okee đó là toàn cảnh của website nhê
+
+
+
+Ngoài trên tôi còn nhận code theo yêu cầu cũng như deploy lên web site nè bạn nào thì cứ inpỏt mình nheeeeeee
+
+Cảm ơn các bạn
+
+
+
+        
+
+
+            

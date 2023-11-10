@@ -1,0 +1,67 @@
+.text-blue,
+.text-blue:hover {
+    color: var(--app-blue);
+}
+
+.text-black,
+.text-black:hover {
+    color: var(--app-black);
+}
+
+.text-red,
+.text-red:hover {
+    color: var(--app-red);
+}
+
+.text-grey,
+.text-grey:hover {
+    color: var(--app-grey);
+}
+
+.bg-blue {
+    background-color: var(--app-blue);
+}
+
+.bg-grey {
+    background-color: var(--app-grey);
+}
+
+.bg-light-blue {
+    background-color: var(--app-light-blue);
+}
+
+.bg-blue-no-active {
+    transition: all 0.4s ease-in-out;
+}
+
+.bg-blue-active,
+.bg-blue-no-active:hover {
+    color: var(--app-white);
+    background-color: var(--app-blue);
+    border-color: var(--app-blue);
+    border-radius: 6px;
+}
+
+/* For Custom Bootstrap */
+.btn-blue {
+    color: var(--app-white);
+    background-color: var(--app-blue);
+    border-color: var(--app-blue);
+}
+
+.btn-grey {
+    color: var(--app-white);
+    background-color: var(--app-grey);
+    border-color: var(--app-grey);
+}
+
+.btn-link,
+.btn-link:hover {
+    color: var(--app-blue);
+    text-decoration: none;
+}
+
+.btn:hover.btn-blue,
+.btn:hover.btn-grey {
+    color: var(--app-white);
+}

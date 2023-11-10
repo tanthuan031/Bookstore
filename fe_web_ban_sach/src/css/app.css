@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font), sans-serif !important;
+    font-weight: var(--font-regular) !important;
+    color: var(--app-black);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-active-link {
+    background-color: var(--app-blue);
+    color: var(--app-white) !important;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.app-not-active-link {
+    transition: all 0.3s ease-in-out;
+}
+
+.app-not-active-link:hover {
+    background-color: var(--app-blue);
+    color: var(--app-white) !important;
+    border-radius: 6px;
+}
+
+.app-divide {
+    width: 100%;
+    height: 3px;
+    background-color: var(--app-light-grey);
+    border-radius: 4px;
+}
+
+.app-divide-2 {
+    width: 100%;
+    height: 1px;
+    background-color: var(--app-blue);
+    opacity: 0.4;
+    border-radius: 4px;
+}
+
+.app-border-top-card {
+    border-top: 1px solid var(--bootstrap-color-divide);
+}
+
+.app-border {
+    border: 2px solid var(--bootstrap-color-divide);
+}
+
+.app-border-right {
+    height: auto;
+    border-right: 1px solid var(--app-black);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-no-drop {
+    cursor: no-drop;
+}
+
+.app-border-8px {
+    border-radius: 8px;
+}
+
+.app-border-radius-right-0 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.app-border-radius-left-0 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.swiper-slide {
+    height: auto !important;
+}
+
+.swiper-pagination {
+    position: relative !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--app-blue) !important;
+}
+
+[id^="NotiflixBlockWrap"] > span[class*="-message"] {
+    font-weight: var(--font-semi) !important;
+}
+
+.app-card-padding {
+    padding: 0.5rem;
+}
+
+.app-filter-button-shop {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 1020;
+    display: none;
+}
+
+.app-overflow {
+    overflow-y: auto;
+}
+
+.product-filter-rating-star {
+    --spacing: 8px;
+    --columns: 5;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.product-filter-rating-star li {
+    overflow: hidden;
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: calc(var(--spacing) + 6px);
+}
+
+.product-filter-rating-star li:not(:last-child) {
+    border-right: 1px solid var(--app-black);
+}
+
+.width-100px {
+    width: 100px;
+}
+
+.height-100px {
+    height: 100px;
+}

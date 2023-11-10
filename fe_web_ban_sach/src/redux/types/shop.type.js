@@ -1,0 +1,14 @@
+export const shop_RESET = "shop_RESET";
+export const shop_SET_TOTAL_PAGES = "shop_SET_TOTAL_PAGES";
+export const shop_SET_BOOKS = "shop_SET_BOOKS";
+export const shop_SET_ITEMS_TOTAL = "shop_SET_ITEMS_TOTAL";
+export const shop_SET_CURRENT_PAGE = "shop_SET_CURRENT_PAGE";
+export const shop_SET_INDEX_ITEM = "shop_SET_INDEX_ITEM";
+export const shop_SET_CURRENT_PER_PAGE = "shop_SET_CURRENT_PER_PAGE";
+export const shop_SET_CURRENT_FILTER = "shop_SET_CURRENT_FILTER";
+export const shop_EDIT_CURRENT_FILTER = "shop_EDIT_CURRENT_FILTER";
+export const shop_REMOVE_CURRENT_FILTER = "shop_REMOVE_CURRENT_FILTER";
+export const shop_SET_LOADING = "shop_SET_LOADING";
+export const shop_SET_FIRST_LOADING = "shop_SET_FIRST_LOADING";
+export const shop_SET_CURRENT_SORT = "shop_SET_CURRENT_SORT";
+export const shop_RESET_FILTER = "shop_RESET_FILTER";

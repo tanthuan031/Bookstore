@@ -1,0 +1,104 @@
+.app-card-product {
+    transition: box-shadow 0.5s;
+}
+
+.app-card-product:hover {
+    box-shadow: 0 8px 36px rgb(152 180 234 / 19%),
+        0 11px 33px rgb(122 152 210 / 12%);
+}
+
+.app-card-product .card-img-top {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.app-card-product .card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.app-card-product .card-title,
+.app-cart .card-title {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    transition: color 0.4s ease-in;
+}
+
+.app-cart.app-cart.app-cart-responsive {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+}
+
+.app-cart.app-cart.app-cart-responsive .acr-heading {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.app-cart.app-cart-responsive .acr-body {
+    padding: 0.75rem;
+}
+
+.app-cart.app-cart-responsive .acr-main {
+    overflow: auto;
+}
+
+.app-cart.app-cart-responsive .acr-body:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.app-cart.app-cart-responsive .acr-body a {
+    color: inherit;
+}
+
+.app-cart.app-cart-responsive .acr-body a:hover .card-title {
+    color: var(--app-blue);
+}
+
+.app-cart.app-cart-responsive .acr-body a:hover .author_name {
+    color: var(--app-black);
+}
+
+.app-card-product:hover .card-title {
+    color: var(--app-blue);
+}
+
+.app-card-product .card-image .card-image-layout {
+    max-width: 100%;
+    padding-top: 130%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.app-card-product .card-image .card-image-layout::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.app-card-product .card-image .card-image-layout img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle;
+}

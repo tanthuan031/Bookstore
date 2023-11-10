@@ -1,0 +1,70 @@
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--app-blue);
+    border-color: var(--app-blue);
+}
+
+.custom-checkbox
+    .custom-control-input:checked:focus
+    ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.pagination {
+    font-weight: var(--font-semi);
+}
+
+.pagination .page-item.active .page-link {
+    color: var(--app-white);
+}
+
+.pagination .page-item,
+.pagination .page-item .page-link {
+    color: var(--app-blue);
+}
+
+.pagination .page-link:focus {
+    box-shadow: none;
+}
+
+.pagination .active .page-link {
+    background-color: var(--app-blue);
+    border-color: var(--app-blue);
+    font-weight: var(--font-semi);
+}
+
+.pagination .active .page-link {
+    font-weight: var(--font-medium);
+}
+
+.pagination .page-item.disabled .page-link {
+    color: var(--app-grey);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: var(--app-blue);
+    background-color: var(--app-light-blue);
+    font-weight: var(--font-semi);
+}
+
+.row {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+#dropdown-user {
+    font-weight: var(--font-bold);
+}
+
+#dropdown-user::after {
+    content: none;
+}
+
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}

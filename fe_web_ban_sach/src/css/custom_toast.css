@@ -1,0 +1,10 @@
+.swal2-popup.swal2-toast.swal2-icon-error.swal2-show,
+.swal2-popup.swal2-toast.swal2-icon-success.swal2-show,
+.swal2-popup.swal2-toast.swal2-icon-warning.swal2-show,
+.swal2-popup.swal2-toast.swal2-icon-error.animate__animated.animate__fadeInRight,
+.swal2-popup.swal2-toast.swal2-icon-success.animate__animated.animate__fadeInRight,
+.swal2-popup.swal2-toast.swal2-icon-warning.animate__animated.animate__fadeInRight {
+    display: flex !important;
+    align-items: center;
+    font-size: var(--16px);
+}

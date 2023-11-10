@@ -1,0 +1,33 @@
+.app-text-field input,
+.app-text-field textarea,
+.app-text-field select {
+    border-width: 2px;
+}
+
+.app-text-field input:focus,
+.app-text-field textarea:focus,
+.app-text-field select:focus {
+    border-color: var(--app-blue);
+}
+
+.app-text-field .error {
+    position: absolute;
+    font-size: var(--12px);
+    color: var(--app-red);
+    font-weight: var(--font-medium);
+}
+
+.app-text-field .css-1s2u09g-control {
+    border-width: 2px;
+    border-color: var(--app-light-grey-3);
+}
+
+.app-text-field .css-1pahdxg-control {
+    border-width: 2px;
+    border-color: var(--app-blue);
+    box-shadow: none;
+}
+
+.app-text-field .css-26l3qy-menu .css-4ljt47-MenuList .css-9gakcf-option {
+    background-color: var(--app-blue);
+}
